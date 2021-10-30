@@ -27,7 +27,7 @@ const Home = () => {
     axios({
       method: 'GET',
       url: 'https://randomuser.me/api/',
-      params: { page: page, seed: 'abc', results: 30 },
+      params: { page: page, seed: 'abc', results: 50 },
     })
       .then((response) => {
         if (patients) {
