@@ -94,6 +94,10 @@ const Button = withStyles(() => ({
   root: {
     marginTop: '2rem',
   },
+  outlined: {
+    color: 'grey',
+    border: '1px solid grey',
+  },
 }))(MuiButton);
 
 export default Home;

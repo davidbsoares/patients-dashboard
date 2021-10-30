@@ -61,7 +61,9 @@ const Table = ({ search, openModal }) => {
                   <TableBodyCell>{p.gender}</TableBodyCell>
                   <TableCell>{dob}</TableCell>
                   <TableCell>
-                    <Button onClick={() => handleModal(p)}>Details</Button>
+                    <Button variant="outlined" onClick={() => handleModal(p)}>
+                      Details
+                    </Button>
                   </TableCell>
                 </TableRow>
               );
@@ -93,8 +95,9 @@ const TableBodyCell = withStyles(() => ({
 }))(TableCell);
 
 const Button = withStyles(() => ({
-  textPrimary: {
-    color: '#000',
+  outlined: {
+    color: 'grey',
+    border: '1px solid grey',
   },
 }))(MuiButton);
 
