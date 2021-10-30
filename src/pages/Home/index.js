@@ -40,6 +40,7 @@ const Home = () => {
       .catch((err) => {
         console.log(err);
       });
+    // eslint-disable-next-line
   }, [page]);
 
   return (
